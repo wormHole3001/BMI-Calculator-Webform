@@ -18,7 +18,7 @@
                     <div class="col-5 col-lg-7 mx-auto mb-5 mb-lg-0">
                         <div class="pr-lg-5">
                             <div class="form-group mb-4">
-                                <!-- Picture Maybe> -->
+                                <asp:Image ID="Image1" runat="server" Height="667px" ImageUrl="~/Content/BMI.gif" Visible="False" Width="529px" />
                             </div>
                         </div>
                     </div>
@@ -71,8 +71,8 @@
                             <asp:TextBox ReadOnly="true" CssClass="form-control border-0 shadow form-control-lg text-base" placeholder="BMI" runat="server" ID="BmiTextBox"></asp:TextBox>
                         </div>
                         <!-- Buttons -->
-                        <asp:Button Text="Close" CssClass="btn btn-primary" Height="50px" Width="200px" runat="server" ID="CloseButton" />
-                        <asp:Button Text="Chart" CssClass="btn btn-primary" Height="50px" Width="200px" runat="server" ID="ChartButton" />
+                        <asp:Button Text="Close" CssClass="btn btn-primary" Height="50px" Width="200px" runat="server" ID="CloseButton" OnClick="CloseButton_Click" />
+                        <asp:Button Text="Chart" CssClass="btn btn-primary" Height="50px" Width="200px" runat="server" ID="ChartButton" OnClick="ChartButton_Click" />
                     </div>
                 </div>
                 <footer class="footer bg-white shadow align-self-end py-3 px-xl-5 w-100 " style="text-align: end; margin-top: 390px">

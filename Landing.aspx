@@ -18,10 +18,7 @@
                     <div class="col-5 col-lg-7 mx-auto mb-5 mb-lg-0">
                         <div class="pr-lg-5">
                             <div class="form-group mb-4">
-                                <label>First Name</label>
-                                <asp:TextBox CssClass="form-control border-0 shadow form-control-lg text-base" Text="Name" ID="FName" runat="server">
-                                    FName = FirstName
-                                </asp:TextBox>
+                                <asp:Image ID="Image1" runat="server" Height="667px" ImageUrl="~/Content/BMI.gif" Visible="False" Width="529px" />
                             </div>
                         </div>
                     </div>
@@ -64,7 +61,7 @@
                         </div>
                         <!-- Buttons -->
                         <asp:Button Text="Submit" CssClass="btn btn-primary" Height="50px" Width="200px" runat="server" ID="SubmitButton" OnClick="SubmitButton_Click" />
-                        <asp:Button Text="Chart" CssClass="btn btn-primary" Height="50px" Width="200px" runat="server" ID="ChartButton" />
+                        <asp:Button Text="Chart" CssClass="btn btn-primary" Height="50px" Width="200px" runat="server" ID="ChartButton" OnClick="ChartButton_Click" CausesValidation="false" UseSubmitBehavior="false"/>
                         
                     </div>
                 </div>

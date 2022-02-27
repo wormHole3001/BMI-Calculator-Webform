@@ -24,5 +24,10 @@ namespace BMI_Calculator
             Session["Gender"] = Gender.Text;
             Response.Redirect("Results.aspx");
         }
+
+        protected void ChartButton_Click(object sender, EventArgs e)
+        {
+            Image1.Visible = true;
+        }
     }
 }

@@ -29,5 +29,15 @@ namespace BMI_Calculator
             TargetHeartRateTextBox.Text = "Between " + TargetMin.ToString() + " and " + TargetMax.ToString() + " bpm.";
             BmiTextBox.Text = BMI.ToString();
         }
+
+        protected void CloseButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Landing.aspx");
+        }
+
+        protected void ChartButton_Click(object sender, EventArgs e)
+        {
+            Image1.Visible = true;
+        }
     }
 }
